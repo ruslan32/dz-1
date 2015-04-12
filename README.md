@@ -1,6 +1,7 @@
 > Мой проект
 Как его установить?
-git clone https://github.com/ruslan32/dz-1
-npm i
-bower 1
-gulp
+
+1. git clone https://github.com/ruslan32/dz-1
+2. npm i
+4. bower 1
+5. gulp
