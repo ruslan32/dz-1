@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="ru">
 <!--<![endif]-->
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,24 +17,27 @@
 	<script src="../initializr-template/js/libs/modernizr-2.0.6.min.js"></script>
 	<title>Document</title>
 </head>
-
 <body>
 <div class="container_big">
-	<div class="logon">
+	<div class="logon" id="log">
+	<form action="">
 		<div class="logon-head">
 			<p class="authorization">Авторизуйтесь</p>
 		</div>
 		<div class="username">
 			<p class="logon-user">Логин</p>
-			<input class="username-log" type="text" name="textfield" placeholder="Введите логин">
+			<input class="username-log" type="text" name="user" placeholder="Введите логин">
 		</div>
 		<div class="username">
 			<p class="logon-user">Пароль</p>
-			<input class="username-log" type="text" name="textfield" placeholder="Введите пароль">
+			<input class="username-log" type="password" name="password" placeholder="Введите пароль">
 		</div>
 		<button type="submit" class="send logon-send">Войти</button>
+	</form>
 	</div>
 </div>
-
+	<script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/html5shiv.js"></script>
 </body>
 </html>

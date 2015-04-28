@@ -133,7 +133,7 @@ content: " ";
 	margin-bottom: 25px;
 	background-color: #eff3f7;
 	border-radius: 3%;
-	max-height: 219px;
+/*	max-height: 219px;*/
 	overflow: hidden;
 /*	display: none;*/
 }
@@ -151,7 +151,7 @@ content: " ";
 	text-decoration: none;
 	color: #959aa8;
 	font: 300 21px fira_sansbook;
-	max-height: 70px;
+/*	max-height: 70px;*/
 	box-sizing: border-box;
 	overflow: hidden;
 	
@@ -188,6 +188,7 @@ content: " ";
 }
 .contact-section{
 	background: url(../img/sprite5.png) 21px center no-repeat;
+	list-style: none;
 }
 .contack_link{
 	text-decoration: none;
@@ -196,7 +197,7 @@ content: " ";
 	font: 300 17px fira_sansbook;
 	padding: 6px 0 5px 53px;
 	margin-left: 25px;
-	max-height: 38px;
+/*	max-height: 38px;*/
 	box-sizing: border-box;
 	overflow: hidden;
 }
@@ -284,8 +285,11 @@ content: " ";
   	margin-top: -20px;
 }
 .skills{
+  background: rgb(46, 140, 162);
   background: -webkit-linear-gradient(90deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
 	background: linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+	background: -ms-linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
+	background: -moz-linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 100%);
 	border-radius: 3px;
 	display: inline-block;
 	margin-bottom: 9px;
@@ -428,6 +432,7 @@ content: " ";
 \\\\\\\\\\\\\\\\\\\second.html\\\\\\\\\\\\\\\\
 */
 .saver{
+	background: rgb(124, 140, 153);
 	background: rgba(1, 108, 164, 0.75) repeat;
 	bottom: 0;
     position: fixed;
@@ -443,7 +448,7 @@ content: " ";
 .my-work{
 	float: right;
 	width: 632px;
-	padding-left: 18px;
+/*	padding-left: 18px;*/
 	background-color: #eff3f7;
 	min-height: 839px;
 	border-radius: 1%;
@@ -452,15 +457,17 @@ content: " ";
 }
 .head-second{
 	margin-bottom: 31px;
-	margin-left: -18px;
+/*	margin-left: -18px;*/
 	width: 202px;
 }
 .site{
 	width: 183px; 
 	display: inline-block;
 	border-radius: 3%;
-	margin-right: 30px;
+/*	margin-right: -5px;*/
 	margin-bottom: 35px;
+	margin-left: 20px;
+	vertical-align: top;
 }
 .site:nth-child(4){
 	margin-right: 0;
@@ -522,8 +529,10 @@ content: " ";
 	height: 52px;
 	color: #3ba8c0;
 	font: 300 13px  fira_sanslight;
-	position: absolute;
-  	top: 499px;
+/*
+	position: relative;
+  	top: -110px;
+*/
 	border: 1px dashed #3ba8c0;
 	border-radius: 4px;
 	display: inline-block;
@@ -545,8 +554,13 @@ content: " ";
 	width: 170px;
 	text-align: center;
 	margin: 0 auto;
+/*
 	max-height: 48px;
   	overflow: hidden;
+*/
+}
+.add{
+	height: 165px;
 }
 /*////////////////popup upload\\\\\\\\\\\\\\\*/
 .uploat{
@@ -865,6 +879,10 @@ megasse{
 	width: 52px; 
 	height: 41px; 
 } 
+.error{
+	border: 1px solid #f97e76;
+	background: rgba(249, 126, 118, 0.33);
+}
 .clearfix:before, .clearfix:after { 
 	content: ""; 
 	display: table; 

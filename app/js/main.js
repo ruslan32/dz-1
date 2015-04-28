@@ -13,7 +13,6 @@ $('.uploat-close').click(function(event) {
 if ($(this).val().length == 0) {
 $(this)
 .addClass('error');
-//.after('<span class="error">This field must ... </span>');
 }
 });
 $(':input').focus(function() {
@@ -21,5 +20,15 @@ $(this)
 .removeClass('error')
 .next('span')
 .remove();
+	});
+	$('#link, #up, #log').bind('submit', function(event) {
+  $('[type=text], [type="password]').each(function() {
+    if(!$(this).val().length) {
+      event.preventDefault();
+      $(this).addClass('error');
+    }
+  });	
+});
+	$('#link, #up, #log').bind('reset', function(event){	$('[type=text], [type=submit]').removeClass('error');
 	});
 });
