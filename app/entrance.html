@@ -9,6 +9,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!--    <link rel="stylesheet" href="../initializr-template/css/style.css">-->
@@ -20,24 +21,26 @@
 <body>
 <div class="container_big">
 	<div class="logon" id="log">
-	<form action="">
+	<form action="" id="login">
 		<div class="logon-head">
 			<p class="authorization">Авторизуйтесь</p>
 		</div>
 		<div class="username">
 			<p class="logon-user">Логин</p>
-			<input class="username-log" type="text" name="user" placeholder="Введите логин">
+			<input class="username-log" type="text" id="user" qtip-content="Введите логин" placeholder="Введите логин">
 		</div>
 		<div class="username">
 			<p class="logon-user">Пароль</p>
-			<input class="username-log" type="password" name="password" placeholder="Введите пароль">
+			<input class="username-log" type="password" id="password" qtip-content="Введите пароль" placeholder="Введите пароль">
 		</div>
 		<button type="submit" class="send logon-send">Войти</button>
 	</form>
 	</div>
 </div>
 	<script src="bower/jquery/dist/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/html5shiv.js"></script>
 </body>
 </html>

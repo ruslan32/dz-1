@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="fonts/fira/fira.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
     <script src="initializr-template/js/libs/modernizr-2.0.6.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -147,6 +148,8 @@
             <p class="footer">&#169;2015. Это мой сайт, пожайлуста не копируйте и не воруйте его</p>
         </footer>
         <script src="bower/jquery/dist/jquery.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
         <script src="js/main.js"></script>
     	<script src="js/html5shiv.js"></script>
     <div class="uploat" id="up">
@@ -157,26 +160,28 @@
         <form action="" id="myform" method="get">
             <div class="name">
                 <p class="name-text">Название проекта</p>
-                <input class="upload-name" type="text" name="textfield" placeholder="Введите название" size="25">
+                <input class="upload-name" type="text" qtip-content="Вы не ввели название" name="project name" placeholder="Введите название" size="25">
             </div>
            <div class="fileinputs">
-          
     			<input type="file" class="file" />
 				<div class="fakefile">
 				 <p class="name-text">Картинка проекта</p>
-					<input class="upload-name" type="text" placeholder="Загрузите изображение"size="25">
+					<input class="upload-name" type="text" qtip-content="Вы не выбрали изображение" placeholder="Загрузите изображение"size="25">
 					<img class="pic" src="img/upload.png"/>
 				</div>
+				<div class="name-error"></div>
 			</div>
             <div class="name">
                 <p class="name-text">URL объекта</p>
-                <input class="upload-name" type="text" name="textfield" size="25" placeholder="Добавьте ссылку">
+                <input class="upload-name" type="text" qtip-content="Вы не добавили ссылку" name="url" size="25" placeholder="Добавьте ссылку">
+               <div class="name-error"></div> 
             </div>
             <div class="name">
                 <p class="name-text">Описание объекта</p>
-                <textarea class="upload-text" type="text" name="" cols="25" rows="5" placeholder="Пара слов о проекте"></textarea>
+                <textarea class="upload-text" type="text" name="Property description" qtip-content="Описание проекта обязательно" placeholder="Пара слов о проекте"></textarea>
+                <div class="name-error"></div>
             </div>
-            <button class="send">Добавить</button>
+            <button type="submit" class="send">Добавить</button>
         </form>
     </div>
 </body>

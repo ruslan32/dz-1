@@ -1,15 +1,5 @@
-$(document).ready(function () {
-	$('.project').click(function (event) {
-		event.preventDefault();
-		$('.uploat').addClass('uploat-show');
-		$('.saver').addClass('block');
-	});
-	$('.uploat-close').click(function (event) {
-		event.preventDefault();
-		$('.uploat').removeClass('uploat-show');
-		$('.saver').removeClass('block');
-	});
-	$('input[type="text"], textarea[type="text"],[type="password"]').blur(function () {
+$(document).ready(function(){
+    $('#user, #password').blur(function () {
 		if ($(this).val().length == 0) {
 			$(this)
 				.addClass('error show');
@@ -42,7 +32,7 @@ $(document).ready(function () {
 			console.log("not-error");
 		}
 	});
-	$('input[type="text"], textarea[type="text"],[type="password"]').focus(function () {
+	$('input[type="text"], textarea[type="password"]').focus(function () {
 		$(this)
 			.removeClass('error')
 	});
@@ -52,9 +42,9 @@ $(document).ready(function () {
 			location.reload();
 		} else {
 			event.preventDefault();
-			$('input[type="text"], textarea[type="text"],[type="password"]').addClass('error show');
+			$('input[type="text"], input[type="password"]').addClass('error show');
 			console.log("errore");
 		}
 	});
 	$('input, textarea').placeholder();
-});
+});	
