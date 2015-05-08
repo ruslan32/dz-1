@@ -8,6 +8,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		$('.uploat').removeClass('uploat-show');
 		$('.saver').removeClass('block');
+		$('.upload-name, .upload-text').qtip('destroy', true);
 	});
 	$('input[type="text"], textarea[type="text"],[type="password"]').blur(function () {
 		if ($(this).val().length == 0) {
@@ -44,7 +45,8 @@ $(document).ready(function () {
 	});
 	$('input[type="text"], textarea[type="text"],[type="password"]').focus(function () {
 		$(this)
-			.removeClass('error')
+			.removeClass('error');
+		$('input[type="text"], textarea[type="text"],[type="password"]').qtip('toggle', true);
 	});
 	$('button[type="submit"]').click(function (event) {
 		//	event.preventDefault();
